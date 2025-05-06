@@ -1,0 +1,34 @@
+{
+    "hero_heading": "Empowering Telecommunication Through Innovation",
+    "hero_subheading": "PT Cahaya Mitratama Technology is your trusted partner in delivering smart, reliable telecommunication solutions.",
+    "hero_image": "/assets/hero.webp",
+    "about_us": "PT Cahaya Mitratama Technology is a dynamic, solution-oriented company that has been serving the telecommunication industry since 2004. We provide a wide range of services and solutions to support telecom carriers and technology providers. Driven by a team of professionals, we are committed to contributing to the growth and advancement of Indonesia’s telecommunication landscape through reliable, innovative, and high-quality services.",
+    "partnership": {
+        "operator": [
+            "/assets/partnership/operator1.webp",
+            "/assets/partnership/operator2.webp",
+            "/assets/partnership/operator3.webp",
+            "/assets/partnership/operator4.webp",
+            "/assets/partnership/operator5.webp",
+            "/assets/partnership/operator6.webp",
+            "/assets/partnership/operator7.webp"
+        ],
+        "vendor": [
+            "/assets/partnership/vendor1.webp",
+            "/assets/partnership/vendor2.webp",
+            "/assets/partnership/vendor3.webp",
+            "/assets/partnership/vendor4.webp",
+            "/assets/partnership/vendor5.webp",
+            "/assets/partnership/vendor6.webp",
+            "/assets/partnership/vendor7.webp",
+            "/assets/partnership/vendor8.webp"
+        ],
+        "mitra": [
+            "/assets/partnership/mitra1.webp",
+            "/assets/partnership/mitra2.webp",
+            "/assets/partnership/mitra3.webp",
+            "/assets/partnership/mitra4.webp",
+            "/assets/partnership/mitra5.webp"
+        ]
+    }
+}
