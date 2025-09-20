@@ -8,21 +8,19 @@ export default {
     extend: {
       colors: {
         primary: {
-          100: "#FFF7DA",
-          200: "#FFEEB5",
-          300: "#FFE190",
-          400: "#FFD575",
-          500: "#FFC247",
-          600: "#DB9E33",
-          700: "#B77C23",
-          800: "#935D16",
-          900: "#7A470D",
+          100: "#EEF5FF",
+          500: "#1820AC",
+          900: "#05172B",
         },
-        accent: "#02033B",
+        accent: "#F8AA4D",
         body: "#F3F8FF"
       },
       maxWidth: {
         wide: "1440px"
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"]
       }
     },
   },

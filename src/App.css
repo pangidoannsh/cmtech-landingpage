@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap');
+
 .hero-circle-shape {
     z-index: -10;
     width: 200vh;
@@ -12,4 +14,34 @@
 
 .bg-linear {
     background: linear-gradient(to bottom, #F7C95F 0%, #FDB235 100%);
+}
+
+.hero-text {
+    background: linear-gradient(90deg, #9EC6FF, #2C7CEF);
+    -webkit-background-clip: text;
+    /* untuk Chrome, Safari */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* untuk Chrome, Safari */
+    color: transparent;
+    /* fallback */
+}
+
+.header-about {
+    background: linear-gradient(to bottom, #0C1057 0%, #1A23BD 70%, white 100%);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    min-width: 200%;
+    animation: marquee 20s linear infinite;
 }

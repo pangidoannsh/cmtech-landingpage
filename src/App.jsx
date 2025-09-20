@@ -5,16 +5,28 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Partnership from './components/Partnership'
 import Product from './components/Product'
+import Header from './components/Header'
+import OurValues from './components/OurValues'
+import Portfolio from './components/Portfolio'
+import Address from './components/Address'
+import Footer from './components/Footer'
 
 const DEFAULT_DATA = {
   hero_heading: '',
   hero_subheading: '',
+  hero_background: '',
   about_us: '',
-  partnership: {
-    operator: [],
-    vendor: [],
-    mitra: []
-  }
+  our_vision: '',
+  vendors: [],
+  navbarHeight: 204,
+  our_values: [],
+  products: [],
+  portfolios: [],
+  address: "",
+  footer_paragraph: "",
+  social_media: [],
+  contacts: [],
+  copyright: ""
 }
 const AppContext = React.createContext(DEFAULT_DATA)
 
@@ -29,18 +41,20 @@ function App() {
 
   return (
     <AppContext value={data}>
-      <main className='overflow-x-hidden '>
-        <div className="hero-circle-shape" />
-        <Navbar />
-        <Hero />
-        <div className="mt-20" />
-        <About />
-        <div className="mt-36 bg-white border-y border-black h-3" />
-        <Partnership />
-        <div className="bg-primary-100">
-          <Product />
-          <div className="mt-36 bg-primary-500 border-y border-black h-3" />
+      <main className='overflow-x-hidden relative'>
+        <div className="fixed top-0 z-50">
+          <Header />
+          <Navbar />
         </div>
+        <Hero />
+        <About />
+        <div className="mt-28"></div>
+        <Partnership />
+        <OurValues />
+        <Product />
+        <Portfolio />
+        <Address />
+        <Footer />
       </main>
     </AppContext>
   )

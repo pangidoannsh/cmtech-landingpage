@@ -1,34 +1,132 @@
 {
     "hero_heading": "Empowering Telecommunication Through Innovation",
+    "hero_background": "/assets/hero_bg.jpg",
     "hero_subheading": "PT Cahaya Mitratama Technology is your trusted partner in delivering smart, reliable telecommunication solutions.",
     "hero_image": "/assets/hero.webp",
     "about_us": "PT Cahaya Mitratama Technology is a dynamic, solution-oriented company that has been serving the telecommunication industry since 2004. We provide a wide range of services and solutions to support telecom carriers and technology providers. Driven by a team of professionals, we are committed to contributing to the growth and advancement of Indonesia’s telecommunication landscape through reliable, innovative, and high-quality services.",
-    "partnership": {
-        "operator": [
-            "/assets/partnership/operator1.webp",
-            "/assets/partnership/operator2.webp",
-            "/assets/partnership/operator3.webp",
-            "/assets/partnership/operator4.webp",
-            "/assets/partnership/operator5.webp",
-            "/assets/partnership/operator6.webp",
-            "/assets/partnership/operator7.webp"
-        ],
-        "vendor": [
-            "/assets/partnership/vendor1.webp",
-            "/assets/partnership/vendor2.webp",
-            "/assets/partnership/vendor3.webp",
-            "/assets/partnership/vendor4.webp",
-            "/assets/partnership/vendor5.webp",
-            "/assets/partnership/vendor6.webp",
-            "/assets/partnership/vendor7.webp",
-            "/assets/partnership/vendor8.webp"
-        ],
-        "mitra": [
-            "/assets/partnership/mitra1.webp",
-            "/assets/partnership/mitra2.webp",
-            "/assets/partnership/mitra3.webp",
-            "/assets/partnership/mitra4.webp",
-            "/assets/partnership/mitra5.webp"
-        ]
-    }
+    "our_vision": "Our vision is to become a trusted telecommunication solution provider with high-quality services and continuous innovation. Our mission is to deliver reliable services, effective supply chain support, and customer satisfaction.",
+    "vendors": [
+        "/assets/partnership/vendor1.webp",
+        "/assets/partnership/vendor2.webp",
+        "/assets/partnership/vendor3.webp",
+        "/assets/partnership/vendor4.webp",
+        "/assets/partnership/vendor5.webp",
+        "/assets/partnership/vendor6.webp",
+        "/assets/partnership/vendor7.webp",
+        "/assets/partnership/vendor8.webp"
+    ],
+    "our_values": [
+        {
+            "title": "Integrity in Service",
+            "description": "We always maintain trust by providing honest, transparent, and professional services to every customer."
+        },
+        {
+            "title": "Innovative Solutions",
+            "description": "We continuously innovate to deliver services and products that support our customers’ digital transformation."
+        },
+        {
+            "title": "Collaborative Partnership",
+            "description": "We build close collaboration with customers, vendors, and strategic partners to achieve mutual success."
+        },
+        {
+            "title": "Customer-Centric Approach",
+            "description": "We place customer needs as the top priority by delivering relevant and targeted solutions."
+        },
+        {
+            "title": "Realiabilty & Quality",
+            "description": "Every solution we deliver is designed with high-quality standards to ensure long-term reliability."
+        },
+        {
+            "title": "Sustainable Growth",
+            "description": "We are committed to supporting our customers’ sustainable growth through eco-friendly and efficient technology solutions."
+        }
+    ],
+    "products": [
+        {
+            "title": "NETWORK PLANNING SERVICES",
+            "img": "/assets/products/product_1.jpg",
+            "link": "#"
+        },
+        {
+            "title": "TELECOM IMPLEMENTATION SERVICES",
+            "img": "/assets/products/product_2.jpg",
+            "link": "#"
+        },
+        {
+            "title": "NETWORK MAINTENANCE SERVICES",
+            "img": "/assets/products/product_3.jpg",
+            "link": "#"
+        },
+        {
+            "title": "NETWORK OPTIM  SERVICES",
+            "img": "/assets/products/product_1.jpg",
+            "link": "#"
+        },
+        {
+            "title": "SITAC & CME SERVICES",
+            "img": "/assets/products/product_2.jpg",
+            "link": "#"
+        },
+        {
+            "title": "NETWORK SUPERVISION SERVICES",
+            "img": "/assets/products/product_3.jpg",
+            "link": "#"
+        }
+    ],
+    "portfolios": [
+        {
+            "title": "Fiber Optic  Splicing In Progress",
+            "img": "/assets/products/product_1.jpg"
+        },
+        {
+            "title": "Nighttime Network Testing",
+            "img": "/assets/products/product_1.jpg"
+        },
+        {
+            "title": "On-Site Fiber Testing",
+            "img": "/assets/products/product_1.jpg"
+        }
+    ],
+    "address": "Jl. Inspeksi Saluran Tarum Barat Blok D No.16 RT.5/RW.11, Cipinang Melayu, Makasar, Jakarta Timur 13620",
+    "footer_paragraph": "Stay connected with PT Cahaya Mitratama Technology and get the latest updates on our reliable, innovative telecommunication solutions that have been driving Indonesia’s industry growth since 2004.",
+    "social_media": [
+        {
+            "icon": "ri:facebook-fill",
+            "link": "#"
+        },
+        {
+            "icon": "mdi:twitter",
+            "link": "#"
+        },
+        {
+            "icon": "mdi:instagram",
+            "link": "#"
+        },
+        {
+            "icon": "ri:linkedin-fill",
+            "link": "#"
+        },
+        {
+            "icon": "streamline:web-remix",
+            "link": "#"
+        }
+    ],
+    "contacts": [
+        {
+            "icon": "mdi:telephone-in-talk",
+            "label": "+62-811-802-315",
+            "link": "#"
+        },
+        {
+            "icon": "mdi:cellphone",
+            "label": "(021) 3885-1014",
+            "link": "#"
+        },
+        {
+            "icon": "mdi:email-fast",
+            "label": "info@cahayamitra.com",
+            "link": "info@cahayamitra.com"
+        }
+    ],
+    "copyright": "© 2025 PT Cahaya Mitratama Technology. All Rights Reserved."
 }
