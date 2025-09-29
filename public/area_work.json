@@ -1,0 +1,90 @@
+[
+    {
+        "city": "Pekanbaru",
+        "pos": [
+            0.5071,
+            101.4478
+        ],
+        "provinsi": "Riau"
+    },
+    {
+        "city": "Kota Jambi",
+        "pos": [
+            -1.4852,
+            103.7611
+        ],
+        "provinsi": "Jambi"
+    },
+    {
+        "city": "Palembang",
+        "pos": [
+            -2.9909,
+            104.7566
+        ],
+        "provinsi": "Sumatera Selatan"
+    },
+    {
+        "city": "Bandar Lampung",
+        "pos": [
+            -5.4297,
+            105.2615
+        ],
+        "provinsi": "Lampung"
+    },
+    {
+        "city": "Serang",
+        "pos": [
+            -6.112,
+            106.15
+        ],
+        "provinsi": "Banten"
+    },
+    {
+        "city": "Jakarta Timur",
+        "pos": [
+            -6.2471,
+            106.8917
+        ],
+        "provinsi": "DKI Jakarta"
+    },
+    {
+        "city": "Semarang",
+        "pos": [
+            -7.0051,
+            110.4381
+        ],
+        "provinsi": "Jawa Tengah"
+    },
+    {
+        "city": "Surabaya",
+        "pos": [
+            -7.2575,
+            112.7521
+        ],
+        "provinsi": "Jawa Timur"
+    },
+    {
+        "city": "Samarinda",
+        "pos": [
+            -0.5022,
+            117.1537
+        ],
+        "provinsi": "Kalimantan Timur"
+    },
+    {
+        "city": "Makassar",
+        "pos": [
+            -5.1477,
+            119.4327
+        ],
+        "provinsi": "Sulawesi Selatan"
+    },
+    {
+        "city": "Kendari",
+        "pos": [
+            -3.9779,
+            122.5151
+        ],
+        "provinsi": "Sulawesi Tenggara"
+    }
+]

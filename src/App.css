@@ -13,7 +13,11 @@
 }
 
 .bg-linear {
-    background: linear-gradient(to bottom, #F7C95F 0%, #FDB235 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #EAF3FF 100%);
+}
+
+.bg-linear-bold {
+    background: linear-gradient(to bottom, #EDF4FF 0%, #B5D2FF 100%);
 }
 
 .hero-text {
@@ -28,7 +32,7 @@
 }
 
 .header-about {
-    background: linear-gradient(to bottom, #0C1057 0%, #1A23BD 70%, white 100%);
+    background: linear-gradient(to bottom, #07071E 80%, rgba(255, 255, 255, 0.98) 100%);
 }
 
 @keyframes marquee {
@@ -44,4 +48,23 @@
 .animate-marquee {
     min-width: 200%;
     animation: marquee 20s linear infinite;
+}
+
+.leaflet-pane {
+    z-index: 40 !important;
+}
+
+.leaflet-tooltip.provinsi-label {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: black;
+    font-weight: 900;
+    font-size: 8px;
+    -webkit-text-stroke: 0.2px white;
+}
+
+.empty-icon {
+    background: none !important;
+    border: none !important;
 }

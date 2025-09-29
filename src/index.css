@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 .container-max {
-    @apply lg:max-w-4xl xl:max-w-6xl 2xl:max-w-wide mx-auto px-12;
+    @apply lg:max-w-5xl xl:max-w-6xl 2xl:max-w-wide mx-auto px-4 sm:px-12;
+}
+
+h2 {
+    font-weight: 800;
+    @apply text-primary-500 text-2xl sm:text-[32px];
 }
 
 body {

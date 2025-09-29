@@ -5,11 +5,13 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Partnership from './components/Partnership'
 import Product from './components/Product'
-import Header from './components/Header'
+import "primereact/resources/themes/saga-blue/theme.css";
 import OurValues from './components/OurValues'
 import Portfolio from './components/Portfolio'
 import Address from './components/Address'
 import Footer from './components/Footer'
+import AreaWork from './components/AreaWork'
+import Company from './components/Company'
 
 const DEFAULT_DATA = {
   hero_heading: '',
@@ -17,7 +19,7 @@ const DEFAULT_DATA = {
   hero_background: '',
   about_us: '',
   our_vision: '',
-  vendors: [],
+  partnership: [],
   navbarHeight: 204,
   our_values: [],
   products: [],
@@ -26,33 +28,46 @@ const DEFAULT_DATA = {
   footer_paragraph: "",
   social_media: [],
   contacts: [],
-  copyright: ""
+  copyright: "",
+  windowWidth: window.innerWidth,
+  management_paragraph: "",
+  structures: [],
+  head_sctructures: [],
+  values: ""
 }
 const AppContext = React.createContext(DEFAULT_DATA)
 
 function App() {
   const [data, setData] = useState(DEFAULT_DATA)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   useEffect(() => {
     fetch('/config.json')
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch(console.error)
+
+    function handleResize() {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [])
 
   return (
-    <AppContext value={data}>
+    <AppContext value={{ ...data, windowWidth }}>
       <main className='overflow-x-hidden relative'>
-        <div className="fixed top-0 z-50">
-          <Header />
-          <Navbar />
-        </div>
+        <Navbar />
         <Hero />
-        <About />
-        <div className="mt-28"></div>
-        <Partnership />
-        <OurValues />
+        <div className="bg-linear">
+          <About />
+          <div className="mt-10 md:mt-28"></div>
+          <Partnership />
+          <OurValues />
+        </div>
         <Product />
         <Portfolio />
+        <AreaWork />
+        <Company />
         <Address />
         <Footer />
       </main>

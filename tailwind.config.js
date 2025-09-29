@@ -10,9 +10,12 @@ export default {
         primary: {
           100: "#EEF5FF",
           500: "#1820AC",
+          600: "#111793",
+          700: "#0C107B",
           900: "#05172B",
         },
         accent: "#F8AA4D",
+        "accent-light": "#F7C95F",
         body: "#F3F8FF"
       },
       maxWidth: {
@@ -21,6 +24,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"]
+      },
+      screens: {
+        xs: "400px"
       }
     },
   },

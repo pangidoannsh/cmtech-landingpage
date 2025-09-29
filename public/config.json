@@ -4,17 +4,81 @@
     "hero_subheading": "PT Cahaya Mitratama Technology is your trusted partner in delivering smart, reliable telecommunication solutions.",
     "hero_image": "/assets/hero.webp",
     "about_us": "PT Cahaya Mitratama Technology is a dynamic, solution-oriented company that has been serving the telecommunication industry since 2004. We provide a wide range of services and solutions to support telecom carriers and technology providers. Driven by a team of professionals, we are committed to contributing to the growth and advancement of Indonesia’s telecommunication landscape through reliable, innovative, and high-quality services.",
-    "our_vision": "Our vision is to become a trusted telecommunication solution provider with high-quality services and continuous innovation. Our mission is to deliver reliable services, effective supply chain support, and customer satisfaction.",
-    "vendors": [
-        "/assets/partnership/vendor1.webp",
-        "/assets/partnership/vendor2.webp",
-        "/assets/partnership/vendor3.webp",
-        "/assets/partnership/vendor4.webp",
-        "/assets/partnership/vendor5.webp",
-        "/assets/partnership/vendor6.webp",
-        "/assets/partnership/vendor7.webp",
-        "/assets/partnership/vendor8.webp"
+    "management_paragraph": "Meet our management team, the leaders who guide and support PT Cahaya Mitratama Technology in delivering trusted and innovative telecommunication solutions.",
+    "structures": [
+        {
+            "position": "GM Operational",
+            "name": "Amsi S Ambalinggi"
+        },
+        {
+            "position": "PM SUMATERA",
+            "name": "Muhammad Faqih"
+        },
+        {
+            "position": "PM SULAWESI",
+            "name": "Arthur Hiskia Putra"
+        },
+        {
+            "position": "PM JAWA",
+            "name": "Andi Kuswandi"
+        },
+        {
+            "position": "FINANCE",
+            "name": "Febriani Paembong"
+        },
+        {
+            "position": "ADMINISTRATION 1",
+            "name": "Puji Rahmadani"
+        },
+        {
+            "position": "ADMINISTRATION 2",
+            "name": "Nbila Karlina"
+        }
     ],
+    "head_sctructures": [
+        {
+            "position": "Commisioner",
+            "name": "Condro Kencono D"
+        },
+        {
+            "position": "Commisioner",
+            "name": "Buana P Tarigan"
+        },
+        {
+            "position": "Director",
+            "name": "Herson B Galugu"
+        }
+    ],
+    "our_vision": "Our vision is to become a trusted telecommunication solution provider with high-quality services and continuous innovation. Our mission is to deliver reliable services, effective supply chain support, and customer satisfaction.",
+    "values": "We uphold integrity, innovation, excellence, collaboration, and sustainability as the foundation of our commitment to customers and partners.",
+    "partnership": {
+        "operator": [
+            "/assets/partnership/operator1.webp",
+            "/assets/partnership/operator2.webp",
+            "/assets/partnership/operator3.webp",
+            "/assets/partnership/operator4.webp",
+            "/assets/partnership/operator5.webp",
+            "/assets/partnership/operator6.webp",
+            "/assets/partnership/operator7.webp"
+        ],
+        "vendor": [
+            "/assets/partnership/vendor1.webp",
+            "/assets/partnership/vendor2.webp",
+            "/assets/partnership/vendor3.webp",
+            "/assets/partnership/vendor4.webp",
+            "/assets/partnership/vendor5.webp",
+            "/assets/partnership/vendor6.webp",
+            "/assets/partnership/vendor7.webp",
+            "/assets/partnership/vendor8.webp"
+        ],
+        "mitra": [
+            "/assets/partnership/mitra1.webp",
+            "/assets/partnership/mitra2.webp",
+            "/assets/partnership/mitra3.webp",
+            "/assets/partnership/mitra4.webp",
+            "/assets/partnership/mitra5.webp"
+        ]
+    },
     "our_values": [
         {
             "title": "Integrity in Service",
@@ -45,46 +109,145 @@
         {
             "title": "NETWORK PLANNING SERVICES",
             "img": "/assets/products/product_1.jpg",
-            "link": "#"
+            "detail": {
+                "desc": "We provide end-to-end planning services to design, evaluate, and prepare the most efficient telecommunication infrastructure. From frequency and transmission planning to site acquisition and fiber optic network design, our solutions ensure strong connectivity and reliable system performance.",
+                "services": [
+                    "RF Planning & TX Planning",
+                    "RF Survey & TX Survey",
+                    "Line of Sight (LOS)",
+                    "Site Hunting",
+                    "Audit",
+                    "RFI Scan Network",
+                    "Survey & Design FO (Backbone, FTTH)"
+                ],
+                "portfolio": [
+                    "/assets/product_detail/1.webp",
+                    "/assets/product_detail/2.webp",
+                    "/assets/product_detail/3.webp"
+                ]
+            }
         },
         {
             "title": "TELECOM IMPLEMENTATION SERVICES",
             "img": "/assets/products/product_2.jpg",
-            "link": "#"
+            "detail": {
+                "desc": "We provide end-to-end planning services to design, evaluate, and prepare the most efficient telecommunication infrastructure. From frequency and transmission planning to site acquisition and fiber optic network design, our solutions ensure strong connectivity and reliable system performance.",
+                "services": [
+                    "RF Planning & TX Planning",
+                    "RF Survey & TX Survey",
+                    "Line of Sight (LOS)",
+                    "Site Hunting",
+                    "Audit",
+                    "RFI Scan Network",
+                    "Survey & Design FO (Backbone, FTTH)"
+                ],
+                "portfolio": [
+                    "/assets/product_detail/1.webp",
+                    "/assets/product_detail/2.webp",
+                    "/assets/product_detail/3.webp"
+                ]
+            }
         },
         {
             "title": "NETWORK MAINTENANCE SERVICES",
             "img": "/assets/products/product_3.jpg",
-            "link": "#"
+            "detail": {
+                "desc": "We provide end-to-end planning services to design, evaluate, and prepare the most efficient telecommunication infrastructure. From frequency and transmission planning to site acquisition and fiber optic network design, our solutions ensure strong connectivity and reliable system performance.",
+                "services": [
+                    "RF Planning & TX Planning",
+                    "RF Survey & TX Survey",
+                    "Line of Sight (LOS)",
+                    "Site Hunting",
+                    "Audit",
+                    "RFI Scan Network",
+                    "Survey & Design FO (Backbone, FTTH)"
+                ],
+                "portfolio": [
+                    "/assets/product_detail/1.webp",
+                    "/assets/product_detail/2.webp",
+                    "/assets/product_detail/3.webp"
+                ]
+            }
         },
         {
             "title": "NETWORK OPTIM  SERVICES",
             "img": "/assets/products/product_1.jpg",
-            "link": "#"
+            "detail": {
+                "desc": "We provide end-to-end planning services to design, evaluate, and prepare the most efficient telecommunication infrastructure. From frequency and transmission planning to site acquisition and fiber optic network design, our solutions ensure strong connectivity and reliable system performance.",
+                "services": [
+                    "RF Planning & TX Planning",
+                    "RF Survey & TX Survey",
+                    "Line of Sight (LOS)",
+                    "Site Hunting",
+                    "Audit",
+                    "RFI Scan Network",
+                    "Survey & Design FO (Backbone, FTTH)"
+                ],
+                "portfolio": [
+                    "/assets/product_detail/1.webp",
+                    "/assets/product_detail/2.webp",
+                    "/assets/product_detail/3.webp"
+                ]
+            }
         },
         {
             "title": "SITAC & CME SERVICES",
             "img": "/assets/products/product_2.jpg",
-            "link": "#"
+            "detail": {
+                "desc": "We provide end-to-end planning services to design, evaluate, and prepare the most efficient telecommunication infrastructure. From frequency and transmission planning to site acquisition and fiber optic network design, our solutions ensure strong connectivity and reliable system performance.",
+                "services": [
+                    "RF Planning & TX Planning",
+                    "RF Survey & TX Survey",
+                    "Line of Sight (LOS)",
+                    "Site Hunting",
+                    "Audit",
+                    "RFI Scan Network",
+                    "Survey & Design FO (Backbone, FTTH)"
+                ],
+                "portfolio": [
+                    "/assets/product_detail/1.webp",
+                    "/assets/product_detail/2.webp",
+                    "/assets/product_detail/3.webp"
+                ]
+            }
         },
         {
             "title": "NETWORK SUPERVISION SERVICES",
             "img": "/assets/products/product_3.jpg",
-            "link": "#"
+            "detail": {
+                "desc": "We provide end-to-end planning services to design, evaluate, and prepare the most efficient telecommunication infrastructure. From frequency and transmission planning to site acquisition and fiber optic network design, our solutions ensure strong connectivity and reliable system performance.",
+                "services": [
+                    "RF Planning & TX Planning",
+                    "RF Survey & TX Survey",
+                    "Line of Sight (LOS)",
+                    "Site Hunting",
+                    "Audit",
+                    "RFI Scan Network",
+                    "Survey & Design FO (Backbone, FTTH)"
+                ],
+                "portfolio": [
+                    "/assets/product_detail/1.webp",
+                    "/assets/product_detail/2.webp",
+                    "/assets/product_detail/3.webp"
+                ]
+            }
         }
     ],
     "portfolios": [
         {
             "title": "Fiber Optic  Splicing In Progress",
-            "img": "/assets/products/product_1.jpg"
+            "img": "/assets/portfolio/portfolio3.webp",
+            "date": "Sept 21, 2025"
         },
         {
             "title": "Nighttime Network Testing",
-            "img": "/assets/products/product_1.jpg"
+            "img": "/assets/portfolio/portfolio2.webp",
+            "date": "Sept 21, 2025"
         },
         {
             "title": "On-Site Fiber Testing",
-            "img": "/assets/products/product_1.jpg"
+            "img": "/assets/portfolio/portfolio7.webp",
+            "date": "Sept 21, 2025"
         }
     ],
     "address": "Jl. Inspeksi Saluran Tarum Barat Blok D No.16 RT.5/RW.11, Cipinang Melayu, Makasar, Jakarta Timur 13620",
