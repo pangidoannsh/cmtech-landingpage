@@ -25,11 +25,11 @@ const Product = () => {
                                 Explore our comprehensive range of network services tailored for the telecommunications industry.
                             </p>
                         </div>
-                        <div className='border border-dashed border-primary-900 rounded-full p-2 md:p-3'>
+                        {/* <div className='border border-dashed border-primary-900 rounded-full p-2 md:p-3'>
                             <button className='bg-primary-500 hover:bg-primary-600 active:bg-primary-700 duration-200 w-full text-white rounded-full py-2 px-10 font-medium lg:text-sm text-xs'>
                                 All Product
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="mt-8 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {products.map((product, i) => (
