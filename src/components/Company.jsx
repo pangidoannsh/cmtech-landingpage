@@ -18,12 +18,12 @@ const profiles = [
         content: <ToolsTab />
     },
 ]
-const Company = () => {
+const Company = ({ reference }) => {
     const { windowWidth } = useAppData()
     const [current, setCurrent] = useState(0)
 
     return (
-        <section className='flex flex-col gap-8 lg:gap-11 py-12 container-max items-center'>
+        <section id='company' ref={reference} className='flex flex-col gap-8 lg:gap-11 py-12 container-max items-center'>
             <div className='flex flex-col gap-4 items-center w-max mx-auto'>
                 <h2>Company</h2>
                 <div className='bg-primary-500 w-1/2 h-1 rounded-full' />

@@ -31,6 +31,10 @@
     /* fallback */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header-about {
     background: linear-gradient(to bottom, #07071E 80%, rgba(255, 255, 255, 0.98) 100%);
 }

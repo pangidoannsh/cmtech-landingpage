@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -40,6 +40,11 @@ const AppContext = React.createContext(DEFAULT_DATA)
 function App() {
   const [data, setData] = useState(DEFAULT_DATA)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const aboutRef = useRef()
+  const productRef = useRef()
+  const portfolioRef = useRef()
+  const companyRef = useRef()
+
   useEffect(() => {
     fetch('/config.json')
       .then((res) => res.json())
@@ -56,18 +61,18 @@ function App() {
   return (
     <AppContext value={{ ...data, windowWidth }}>
       <main className='overflow-x-hidden relative'>
-        <Navbar />
+        <Navbar {...{ aboutRef, productRef, portfolioRef, companyRef }} />
         <Hero />
         <div className="bg-linear">
-          <About />
+          <About reference={aboutRef} />
           <div className="mt-10 md:mt-28"></div>
           <Partnership />
           <OurValues />
         </div>
-        <Product />
-        <Portfolio />
+        <Product reference={productRef} />
+        <Portfolio reference={portfolioRef} />
         <AreaWork />
-        <Company />
+        <Company reference={companyRef} />
         <Address />
         <Footer />
       </main>

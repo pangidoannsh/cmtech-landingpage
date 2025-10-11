@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useAppData } from '../App'
 import ProductDetail from './ProductDetail';
 
-const Product = () => {
+const Product = ({ reference }) => {
     const { products } = useAppData();
     const [detail, setDetail] = useState({
         open: false,
@@ -10,7 +10,7 @@ const Product = () => {
     })
     return (
         <>
-            <div className='bg-linear-bold py-12'>
+            <div id='product' ref={reference} className='bg-linear-bold py-12'>
                 <div className="container-max">
                     <div className="flex md:flex-row flex-col gap-3 md:items-center justify-between">
                         <div className="flex lg:flex-row flex-col lg:items-center gap-3 lg:gap-12">

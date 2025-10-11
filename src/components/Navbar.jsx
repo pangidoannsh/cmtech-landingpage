@@ -4,32 +4,88 @@ import Header from "./Header"
 
 const menus = [
     {
+        key: "home",
         label: "Home",
         icon: "material-symbols-light:home-rounded"
     },
     {
+        key: "about",
         label: "About",
         icon: "mdi:about"
     },
     {
+        key: "product",
         label: "Product Services",
         icon: "ant-design:product-filled"
     },
     {
+        key: "portfolio",
         label: "Portfolio",
         icon: "dashicons:portfolio"
     },
     {
+        key: "company",
         label: "Company",
         icon: "ri:building-fill"
     },
 ]
-const Navbar = () => {
+const Navbar = ({ aboutRef, productRef, portfolioRef, companyRef }) => {
     const [scrollTop, setScrollTop] = useState(0)
     const [showNavbar, setShowNavbar] = useState(true);
     const lastScrollTop = useRef(0);
     const timeoutRef = useRef();
     const [showNavMobile, setShowNavMobile] = useState(false)
+    const [currentNav, setCurrentNav] = useState("home")
+    const [debounceNav, setDebounceNav] = useState("home")
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCurrentNav(debounceNav)
+        }, 1000)
+        return () => {
+            clearTimeout(timeout)
+        }
+    }, [debounceNav])
+
+    function _onClick(menu) {
+        setCurrentNav(menu)
+        switch (menu) {
+            case "home":
+                window.scrollTo(0, 0)
+                break;
+            case "about":
+                aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+                break;
+            case "product":
+                productRef.current?.scrollIntoView({ behavior: "smooth" });
+                break;
+            case "portfolio":
+                portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+                break;
+            case "company":
+                companyRef.current?.scrollIntoView({ behavior: "smooth" });
+                break;
+            default:
+                break;
+        }
+    }
+
+    function _onPageScroll() {
+        let section = "home";
+        if (window.scrollY >= (aboutRef.current?.offsetTop || 0) - 1) {
+            section = 'about';
+        }
+        if (window.scrollY >= (productRef.current?.offsetTop || 0) - 1) {
+            section = 'product';
+        }
+        if (window.scrollY >= (portfolioRef.current?.offsetTop || 0) - 1) {
+            section = 'portfolio';
+        }
+        if (window.scrollY >= (companyRef.current?.offsetTop || 0) - 1) {
+            section = 'company';
+        }
+        setDebounceNav(section)
+    }
     useEffect(() => {
         function onScroll() {
             const currentScroll = window.scrollY;
@@ -52,6 +108,7 @@ const Navbar = () => {
             }
 
             lastScrollTop.current = currentScroll <= 0 ? 0 : currentScroll;
+            _onPageScroll();
         }
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
@@ -71,11 +128,15 @@ const Navbar = () => {
                             </button>
                         </div>
                     </div>
-                    <nav className='bg-gradient-to-b from-[#22298C] to-[#090B26] py-4 hidden sm:block'>
+                    <nav className='bg-gradient-to-b from-[#22298C] to-[#090B26] p-2 hidden sm:block'>
                         <div className="container-max justify-between items-center flex">
-                            <ul className="flex items-center gap-12">
+                            <ul className="flex items-center gap-8">
                                 {menus.map((m, i) => (
-                                    <li key={i} className='text-lg cursor-pointer text-neutral-300 hover:text-neutral-50 duration-150 font-medium flex items-center gap-2'>
+                                    <li
+                                        key={i}
+                                        onClick={() => _onClick(m.key)}
+                                        className={`text-lg cursor-pointer duration-150 font-medium flex items-center gap-2 py-1.5 px-2 rounded-lg
+                                            ${currentNav === m.key ? "bg-white text-primary-500 font-semibold" : "text-neutral-300 hover:text-neutral-50"}`}>
                                         <Icon icon={m.icon} className='text-lg' />
                                         <span className="text-sm">{m.label}</span>
                                     </li>
@@ -99,7 +160,12 @@ const Navbar = () => {
                 <div className="flex py-12 px-3 flex-col gap-10">
                     <ul className="flex flex-col gap-8">
                         {menus.map((m, i) => (
-                            <li key={i} className='text-lg focus:bg-white/20 hover:bg-white/20 rounded-lg py-2 px-4 cursor-pointer text-neutral-300 hover:text-neutral-50 duration-150 font-medium flex items-center gap-2'>
+                            <li
+                                key={i}
+                                onClick={() => _onClick(m.key)}
+                                className={`text-lg rounded-lg py-2 px-4 cursor-pointer duration-150 flex items-center gap-2 
+                                ${currentNav === m.key ? "bg-white text-primary-500 font-semibold" :
+                                        "text-neutral-300 focus:bg-white/20 hover:bg-white/20 hover:text-neutral-50 font-medium"}`}>
                                 <Icon icon={m.icon} className='text-lg' />
                                 <span className="text-sm">{m.label}</span>
                             </li>

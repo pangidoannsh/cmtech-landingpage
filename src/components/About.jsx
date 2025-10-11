@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { useAppData } from '../App'
 
-const About = () => {
+const About = ({ reference }) => {
     const { about_us, our_vision, management_paragraph, structures, head_sctructures, values, windowWidth } = useAppData()
     const [isValues, setIsValues] = useState(false)
     return (
-        <section className='flex flex-col gap-12 md:gap-24 items-center'>
+        <section id='about' ref={reference} className='flex flex-col gap-12 md:gap-24 items-center'>
             <h1 className='text-center w-full header-about py-8 uppercase font-semibold text-2xl text-white'>PT. CAHAYA MITRATAMA</h1>
             <div className="flex flex-col gap-16 xl:gap-36 w-full">
                 <div className="relative w-full">

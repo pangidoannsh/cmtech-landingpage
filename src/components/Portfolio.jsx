@@ -4,7 +4,7 @@ import 'atropos/css'
 import { useState } from "react";
 import { Dialog } from "primereact/dialog";
 
-export default function Portfolio() {
+export default function Portfolio({ reference }) {
     const { portfolios } = useAppData()
     const [popup, setPopup] = useState({
         open: false,
@@ -12,7 +12,7 @@ export default function Portfolio() {
     })
     return (
         <>
-            <div className="relative py-10 bg-cover bg-center z-10 text-white" style={{ backgroundImage: `url("/assets/portfolio_bg.jpg")` }}>
+            <div id="portfolio" ref={reference} className="relative py-10 bg-cover bg-center z-10 text-white" style={{ backgroundImage: `url("/assets/portfolio_bg.jpg")` }}>
                 <div className="absolute -z-10 bg-primary-500/45 w-full h-full top-0 left-0" />
                 <h2 className="text-white text-center">Portfolio</h2>
                 <p className="text-center my-8">
